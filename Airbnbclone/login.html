@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Log in or sign up | Airbnb</title><link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <main class="modal">
+      <header>
+        <a href="airbnbfrontpage.html" class="close" aria-label="Close">✕</a><h1>Log in or sign up</h1>
+      </header>
+      <form id="f" novalidate>
+        <h2>Welcome to Airbnb</h2>
+        <div class="field top">
+          <label>Country/Region</label><select><option>Nigeria (+234)</option><option>Ghana (+233)</option><option>United States (+1)</option><option>United Kingdom (+44)</option><option>Jamaica (+1)</option></select>
+        </div>
+        <div class="field bottom">
+          <label id="lbl">Phone number</label><input id="inp" type="tel" autocomplete="off">
+        </div>
+        <p class="err" id="err" hidden></p><p class="hint">We'll call or text you to confirm your number. Standard message and data rates apply.</p><button class="go" type="submit">Continue</button>
+        <div class="or">
+          <span>or</span>
+        </div>
+        <button type="button" class="alt" id="swap">Continue with email</button><button type="button" class="alt">Continue with Google</button><button type="button" class="alt">Continue with Facebook</button>
+      </form>
+      <p class="toast" id="toast" hidden>Demo only: nothing is saved or sent.</p>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

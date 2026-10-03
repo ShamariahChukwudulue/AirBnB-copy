@@ -1,0 +1,140 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif
+}
+body {
+  background:#f7f7f7;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px
+}
+.modal {
+  background:#fff;
+  width:100%;
+  max-width:568px;
+  border-radius:16px;
+  box-shadow:0 8px 32px rgba(0,0,0,.18);
+  overflow:hidden
+}
+header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  padding:18px;
+  border-bottom:1px solid #ddd
+}
+header h1 {
+  font-size:16px
+}
+.close {
+  position:absolute;
+  left:20px;
+  color:#222;
+  text-decoration:none;
+  padding:6px
+}
+form {
+  padding:24px
+}
+h2 {
+  font-size:22px;
+  margin-bottom:24px
+}
+.field {
+  border:1px solid #888;
+  padding:10px 14px;
+  display:flex;
+  flex-direction:column
+}
+.field.top {
+  border-radius:8px 8px 0 0
+}
+.field.bottom {
+  border-radius:0 0 8px 8px;
+  border-top:none
+}
+.field:focus-within {
+  outline:2px solid #222
+}
+.field label {
+  font-size:12px;
+  color:#717171
+}
+.field select,.field input {
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:transparent;
+  padding-top:2px
+}
+.err {
+  color:#c13515;
+  font-size:13px;
+  margin-top:8px
+}
+.hint {
+  font-size:12px;
+  color:#555;
+  margin:12px 0 16px;
+  line-height:1.4
+}
+.go {
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:linear-gradient(135deg,#e61e4d,#d70466);
+  color:#fff;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer
+}
+.go:hover {
+  opacity:.92
+}
+.or {
+  text-align:center;
+  margin:20px 0;
+  position:relative
+}
+.or:before {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:50%;
+  border-top:1px solid #ddd
+}
+.or span {
+  position:relative;
+  background:#fff;
+  padding:0 10px;
+  font-size:12px;
+  color:#717171
+}
+.alt {
+  width:100%;
+  padding:13px;
+  margin-bottom:12px;
+  border:1px solid #222;
+  border-radius:8px;
+  background:#fff;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer
+}
+.alt:hover {
+  background:#f7f7f7
+}
+.toast {
+  text-align:center;
+  padding:14px;
+  background:#222;
+  color:#fff;
+  font-size:14px
+}
